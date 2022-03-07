@@ -1,0 +1,660 @@
+@charset "utf-8";
+body {
+	--h1-margin: 60px;/*見出し１とコンテンツの間*/
+	background-color: #F8F4D9;
+}
+body, p, h1, h2   ,ul    ,li   ,a,img,dl,dd{
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+	text-decoration: none;
+	border: none;
+	list-style-type: none;
+	vertical-align: bottom;
+	color: #E64040;
+	font-family: Bahnschrift;
+	font-size: 100%;
+}
+header {
+	background-image: url(../img/KAWANOMIYUPORTFOLIO.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	height: 100vh;
+	position: relative;
+}
+header nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit- transform: translateY(-50%);
+	border-left: 5px solid #E64040;
+	margin-left: 80px;
+}
+/*表示するテキストが切り替わる*/
+.btn{
+	position: relative; /*テキストの基点とするためrelativeを指定*/
+    width:210px;
+	padding: 20px;
+    text-align: center;
+	display: inline-block;
+    text-decoration: none;
+    color: #E64040;
+    outline: none;
+    transition: all .1s; /*アニメーションの指定*/
+}
+.btn span, .moreBtn span, footer a span{
+	position: absolute; /*絶対配置でテキストの位置を決める*/
+	left: 50%;
+	top:50%;
+    transform:translate(-50%,-50%);
+    transition: all .1s; /*アニメーションの指定*/
+	display: block; /*ブロック要素にしてテキスト折り返しなし*/ 
+	white-space: nowrap;
+}
+/*差し替わるテキストの設定*/
+.btn span:nth-child(2), .moreBtn span:nth-child(2), footer a span:nth-child(2){
+	opacity:0;/*透過0に*/
+}
+/*hoverするとテキストが入れ替わる設定*/
+.btn:hover span:nth-child(1), .moreBtn:hover span:nth-child(1), footer a:hover span:nth-child(1){
+	opacity:0;/*透過0に*/
+}
+.btn:hover span:nth-child(2), .moreBtn:hover span:nth-child(2), footer a:hover span:nth-child(2){
+	opacity:1;/*不透明に*/
+}
+h1 {
+	height: 100px;
+	font-weight: normal;
+	text-align: right;
+	line-height: 200px;
+	background-repeat: no-repeat;
+	font-size: 50px;
+	margin-bottom: 30px;
+	background-position: right 0%;
+}
+.works_h1 {
+	background-image: url(../img/WORKS.png);
+	width: 340px;
+	background-repeat: no-repeat;
+}
+.profile_h1 {
+	background-image: url(../img/PROFILE.png);
+	margin-left: auto;
+	width: 400px;
+	margin-top: 100px;
+	margin-bottom: var(--h1-margin);
+	background-repeat: no-repeat;
+}
+.skills_h1 {
+	background-image: url(../img/SKILLS.png);
+	background-repeat: no-repeat;
+	width: 325px;
+	margin-top: 100px;
+	margin-bottom: var(--h1-margin);
+}
+.contact_h1 {
+	background-image: url(../img/CONTACT.png);
+	width: 417px;
+	margin-left: auto;
+	margin-top: 100px;
+	margin-bottom: var(--h1-margin);
+	background-repeat: no-repeat;
+}
+.inner {
+	margin: 0 auto;
+	width: 1000px;
+}
+.works_sec .flex-box ,.worksList_sec .flex-box{
+	display: flex;
+	width: 100%;
+	gap: 60px;
+	margin-top: var(--h1-margin);
+}
+.works_sec .flex-box img  ,.worksList_sec .flex-box img{
+	height: auto;
+	max-width: 100%;
+}
+.works_sec .box , .worksList_sec .box{
+	text-align: center;
+}
+.works_sec .flex-box .box p a img:hover  , .worksList_sec .flex-box .box p a img:hover{
+	opacity: 0.9;
+}
+.moreBtn {
+	width: 200px;
+	display: inline-block;
+	padding: 1.8rem;
+	font-size: 16px;
+	font-weight: 700;
+	color: #E64040;
+	border: 1px solid #E64040;
+	cursor: pointer;
+	position: relative;
+	background-color: transparent;
+	text-decoration: none;
+	overflow: hidden;
+	z-index: 1;
+	font-family: inherit;
+}
+
+.moreBtn::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #E64040;
+	transform: translateX(-100%);
+	transition: all .3s;
+	z-index: -1;
+}
+.moreBtn:hover{
+	color: #F8F4D9;
+}
+.moreBtn:hover::before {
+	transform: translateX(0);
+}
+.border {
+	width: 300px;
+	margin-top: 60px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.border:after {
+	border-top: 1px solid;
+	content: "";
+	width: 50px;
+	margin-left: -1rem;
+}
+.profile_flex {
+	display: flex;
+	justify-content: space-between;
+	gap: 97px;
+}
+.profile_text span {
+	color: #fff;
+	background-color: #E64040;
+	padding: 0.1rem 0.3rem;
+}
+.profile_text p {
+	line-height: 29px;
+}
+.profile_text span ruby rt {
+	color: #E64040;
+	font-weight: bold;
+}
+.skill_box .box h2   , .worksDtl_sec h2, .profile_dtl h2{
+	border-left: 5px solid #E64040;
+	padding: .5rem 0 .5rem 2rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
+	font-size: 24px;
+}
+.mail_btn {
+    width:210px;
+	padding: 20px;
+    text-align: center;
+	display: inline-block;
+    color: #E64040;
+}
+.contact_sec a.mail_btn {
+	color: #000;
+	background-color: #E64040;
+	border-bottom: 5px solid #A32727;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	padding: 0;
+	margin: 60px 0;
+}
+.contact_sec a.mail_btn:hover {
+	margin-top: 65px; /*引っ込んだ分の高さを足す*/
+	background-color: #E64040;
+	border-bottom: 0px solid #A32727;
+}
+.contact_sec a.mail_btn img {
+	padding: 27px 0;
+}
+.contact_sec .contact_box {
+	text-align: center;
+}
+footer {
+	background-color: #E64040;
+	height: 145px;
+}
+footer .footer_link a {
+	padding: 0 54px;
+	color: #F8F4D9;
+	position: relative;
+}
+footer .footer_link {
+	text-align: center;
+	line-height: 145px;
+}
+.copyright {
+	text-align: center;
+}
+/*ここまでメインページ*/
+
+/*ここからサブページ*/
+.subPage header {
+	background-image: url(../img/KAWANO%20MIYU%20PORTFOLIO.png);
+	width: 100%;
+	background-position: center top;
+	height: 100%;
+	padding-top: 130px;
+}
+.subPage header nav{
+	margin-left: 0px;
+	border-left: none;
+	position: relative;
+	border-top: 5px solid #E64040;
+}
+.subPage header nav ul{
+	display: flex;
+	justify-content: right;
+}
+.subPage .btn{
+	width: 100px;
+	text-align: right;
+	padding: 40px 20px;
+}
+.subPage h1{
+	margin-right: auto;
+	margin-left: auto;
+}.pageMap ol {
+	display: flex;
+}
+.pageMap ol a {
+	text-decoration: underline;
+}
+
+.pageMap ol li:after {
+	content: "　≫　";
+}
+.pageMap ol li:last-child:after {
+	content: "";
+}
+.page_description {
+	text-align: center;
+}
+/*tab切り替え*/
+/*タブ切り替え全体のスタイル*/
+.tabs {
+	margin-top: 50px;
+	padding-bottom: 40px;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+	width: calc( 1000px / 3 );
+	height: 50px;
+	border-bottom: 3px solid #E64040;
+	background-color: #F8F4D9;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+	color: #E64040;
+	display: block;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	transition: all 0.2s ease;
+}
+.tab_item:hover {
+	background-color: #ED897E;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+	display: none;
+	padding: 40px 0 0;
+	clear: both;
+	overflow: hidden;
+}
+
+
+/*選択されているタブのコンテンツのみを表示*/
+#web_design:checked ~ #web_design_content,
+#banner:checked ~ #banner_content,
+#other:checked ~ #other_content {
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: #E64040;
+  color: #fff;
+}
+.worksDtl_h1  {
+	font-size: 24px;
+	text-align: center;
+}
+.worksDtl_sec .mini_text {
+	font-size: 12px;
+}
+.worksDtl_sec span {
+	font-weight: bold;
+}
+.worksDtl_sec p {
+	line-height: 30px;
+}
+.worksDtl_sec   , .profile_dtl,.worksList_sec{
+	margin-bottom: 60px;
+}
+.profile_dtl dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.profile_dtl dl dt {
+	padding: 2em 1.0em 0.5em 0.5em;
+	text-align: right;
+    width: 8.5em;
+    position: relative;
+}
+ 
+.profile_dtl dl dd {
+    width: calc(100% - 15em);
+    padding: 2em 2em 1em;
+    border-left: 2px solid #E64040;
+}
+.profile_dtl dl dt::after {
+    content: '●';
+    position: absolute;
+    right: -1.2em;
+    top: 25px;
+    font-size: 22px;
+    color: #E64040;
+}
+.link_url  {
+	text-align: center;
+	background-color: #E64040;
+	border-radius: 25px;
+	margin: 1em 0;
+}
+.link_url a {
+	color: hsla(52,66%,91%,1.00);
+	display: block;
+}
+
+.scs_img {
+	display: flex;
+	justify-content: space-between;
+}
+.scs_img img    {
+	height: auto;
+	border: 1px solid #707070;
+	max-width: 100%;
+
+}
+
+.worksDtl_sec .scs_img .scs_pc {
+	width: 60%;
+}
+.worksDtl_sec .scs_img .scs_sp {
+	width: 30%;
+}
+.banner_flex,.banner-inner-flex{
+	display: flex;
+	gap: 20px;
+	justify-content: flex-start;
+}
+.banner_flex {
+	margin-top: var(--h1-margin);
+	flex-wrap: wrap;
+}
+/*「ポップアップで表示する部分」がクリック前に表示されないようにする*/
+.featherlight-sample {
+	display: none;
+}
+/*TOPへ戻るボタン*/
+#pagetop {
+    position: sticky;
+    bottom: 0px;
+    margin-left: auto;
+	width: 80px;
+}
+#pagetop a {
+    position: relative;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-right: 40px solid #E64040;
+    border-bottom: 40px solid #E64040;
+    border-left: 40px solid transparent;
+    margin-right:0px;
+    margin-bottom:0px;
+    background:none;
+    color: #E64040;
+    transition: opacity .6s ease;
+	opacity: .3;
+}
+#pagetop a:hover {
+    opacity: 1;
+}
+#pagetop a::before {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: auto;
+    content: '';
+    transform: rotate(-45deg);
+    border-top: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+}
+
+@media screen and (max-width:1060px){
+.inner {
+	margin: 0 auto;
+	width: calc(100% - 40px);
+}
+header {
+	background-size: contain;
+	margin: 0 auto;
+	width: calc(100% - 200px);
+	background-image: url(../img/KAWANO%20MIYU%20PORTFOLIO_sp.png);
+}
+header nav {
+    border: none;
+    background-color: #E64040;
+	z-index: 98;
+}
+header nav ul {
+	background-color: hsla(0,77%,58%,0.60);
+	padding-top: 70px;
+	position: absolute;
+	top: -100px;
+	height: 100vh;
+}
+
+header nav, .nav-toggle{
+	position: fixed;
+	left: 0px;
+	top: 100px;
+	margin-left: 0px;
+
+}
+.nav-toggle {
+	position: fixed;
+	background-color: #E64040;		
+	width: 70px;
+	height: 70px;
+	margin-left: auto;
+	left: 0px;
+	top: 0px;
+	z-index: 99;
+}
+.nav-toggle span {
+	width: 40px;
+	height: 3px;
+	display: block;
+	position: absolute;
+	left: 15px;
+	background-color: #F8F4D9;
+	transition: 0.3s;
+}
+.nav-toggle span:nth-child(1) {
+	top: 22px;
+}
+.nav-toggle span:nth-child(2) {
+	top: 42px;
+}
+.nav-toggle.open span:nth-child(1) {
+	top: 32px;
+	transform: rotate(315deg);
+}
+.nav-toggle.open span:nth-child(2) {
+	top: 32px;
+	transform: rotate(-315deg);
+}
+.btn {
+	color: #F8F4D9;
+	width: 100vw;
+	padding :40px 0;
+}
+.btn span{
+	font-size: 30px;
+}
+ header nav ul{
+	display: none;
+}
+footer {
+	width: 100%;
+}
+.profile_flex {
+	display: block;
+}
+.profile_flex .profile_img   {
+	margin: 0 auto;
+	text-align: center;
+}
+.subPage header {
+	background-size: contain;
+	width: calc(100% - 70px);
+	margin-left: auto;
+	margin-right: 0px;
+}
+.subPage header nav {
+    position: fixed;
+	top: 97px;
+	z-index: 98;
+}
+.subPage header nav ul {
+    display: none;
+}
+.subPage .btn {
+	width: 100vw;
+	padding-right: 0px;
+}
+.pageMap ol {
+	padding-left: 0px;
+
+}
+.tab_item {
+	width: 100%;
+}
+.tabs {
+	width: 100%;
+}
+
+#web_design_content .tab_content_description .flex-box .box img  {
+	height: auto;
+	max-width: 100%;
+}
+.banner-inner-flex {
+	display: block;
+}
+.featherlight .featherlight-content {
+	width: 90%;
+}
+.inner-img    {
+	text-align: center;
+}
+.worksDtl_sec p img {
+	height: auto;
+	max-width: 100%;
+}
+.subPage h1 {
+	line-height: normal;
+}
+
+
+}
+@media screen and (max-width:560px){
+.works_sec .flex-box {
+	display: block;
+	margin: 0 auto;
+}
+.works_sec .flex-box .box {
+	margin-bottom: 60px;
+}
+.works_h1,.profile_h1,.skills_h1,.contact_h1{
+	background-size: contain;
+	width: 100%;
+	background-position: center center;
+	font-size: 200%;
+	text-align: center;
+	font-weight: bold;
+}
+.border {
+	width: 200px;
+}
+header {
+	width: calc(100% - 40px);
+}
+footer {
+	display: none;
+}
+.worksList_sec .flex-box {
+	display: block;
+}
+.worksList_sec .box {
+	margin-bottom: 60px;
+}
+.pageMap ol {
+	padding-left: 0px;
+}
+.profile_dtl dl dd {
+	border-left-style: none;
+	border-right-style: none;
+	border-bottom: none;
+	border-top-style: none;
+	width: 100%;
+	padding: 0;
+
+}
+.profile_dtl dl dt {
+	text-align: left;
+	font-weight: bold;
+}
+
+.profile_dtl dl dt::after {
+	display: none;
+}
+.profile_dtl dl {
+	display: block;
+}
+
+
+
+
+
+}
