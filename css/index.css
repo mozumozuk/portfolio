@@ -270,11 +270,14 @@ footer .footer_link {
 	margin-left: auto;
 }.pageMap ol {
 	display: flex;
+	flex-wrap: flex;
 }
 .pageMap ol a {
 	text-decoration: underline;
 }
-
+.pageMap ol li {
+	white-space: nowrap;
+}
 .pageMap ol li:after {
 	content: "　≫　";
 }
@@ -292,7 +295,6 @@ footer .footer_link {
 	width: 1000px;
 	margin: 0 auto;
 }
-
 /*タブのスタイル*/
 .tab_item {
 	width: calc( 1000px / 3 );
