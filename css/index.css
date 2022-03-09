@@ -268,9 +268,10 @@ footer .footer_link {
 .subPage h1{
 	margin-right: auto;
 	margin-left: auto;
-}.pageMap ol {
+}
+.pageMap ol {
 	display: flex;
-	flex-wrap: flex;
+	flex-wrap: wrap;
 }
 .pageMap ol a {
 	text-decoration: underline;
@@ -314,12 +315,10 @@ footer .footer_link {
 .tab_item:hover {
 	background-color: #ED897E;
 }
-
 /*ラジオボタンを全て消す*/
 input[name="tab_item"] {
   display: none;
 }
-
 /*タブ切り替えの中身のスタイル*/
 .tab_content {
 	display: none;
@@ -327,15 +326,12 @@ input[name="tab_item"] {
 	clear: both;
 	overflow: hidden;
 }
-
-
 /*選択されているタブのコンテンツのみを表示*/
 #web_design:checked ~ #web_design_content,
 #banner:checked ~ #banner_content,
 #other:checked ~ #other_content {
   display: block;
 }
-
 /*選択されているタブのスタイルを変える*/
 .tabs input:checked + .tab_item {
   background-color: #E64040;
@@ -354,7 +350,7 @@ input[name="tab_item"] {
 .worksDtl_sec p {
 	line-height: 30px;
 }
-.worksDtl_sec   , .profile_dtl,.worksList_sec{
+.worksDtl_sec, .profile_dtl,.worksList_sec{
 	margin-bottom: 60px;
 }
 .profile_dtl dl {
@@ -368,7 +364,6 @@ input[name="tab_item"] {
     width: 8.5em;
     position: relative;
 }
- 
 .profile_dtl dl dd {
     width: calc(100% - 15em);
     padding: 2em 2em 1em;
@@ -392,7 +387,6 @@ input[name="tab_item"] {
 	color: hsla(52,66%,91%,1.00);
 	display: block;
 }
-
 .scs_img {
 	display: flex;
 	justify-content: space-between;
@@ -401,9 +395,7 @@ input[name="tab_item"] {
 	height: auto;
 	border: 1px solid #707070;
 	max-width: 100%;
-
 }
-
 .worksDtl_sec .scs_img .scs_pc {
 	width: 60%;
 }
