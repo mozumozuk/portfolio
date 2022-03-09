@@ -622,6 +622,9 @@ footer {
 .pageMap ol {
 	padding-left: 0px;
 }
+.link_url a {
+	font-size: 14px;
+}
 .profile_dtl dl dd {
 	border-left-style: none;
 	border-right-style: none;
