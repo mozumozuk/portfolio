@@ -478,13 +478,11 @@ header nav ul {
 	top: -100px;
 	height: 100vh;
 }
-
 header nav, .nav-toggle{
 	position: fixed;
 	left: 0px;
 	top: 100px;
 	margin-left: 0px;
-
 }
 .nav-toggle {
 	position: fixed;
@@ -536,7 +534,7 @@ footer {
 .profile_flex {
 	display: block;
 }
-.profile_flex .profile_img   {
+.profile_flex .profile_img {
 	margin: 0 auto;
 	text-align: center;
 }
@@ -568,8 +566,7 @@ footer {
 .tabs {
 	width: 100%;
 }
-
-#web_design_content .tab_content_description .flex-box .box img  {
+#web_design_content .tab_content_description .flex-box .box img {
 	height: auto;
 	max-width: 100%;
 }
@@ -579,7 +576,7 @@ footer {
 .featherlight .featherlight-content {
 	width: 90%;
 }
-.inner-img    {
+.inner-img {
 	text-align: center;
 }
 .worksDtl_sec p img {
@@ -589,9 +586,7 @@ footer {
 .subPage h1 {
 	line-height: normal;
 }
-
-
-}
+}/*ここまでmax-width:1060px*/
 @media screen and (max-width:560px){
 .works_sec .flex-box {
 	display: block;
@@ -633,22 +628,15 @@ footer {
 	border-top-style: none;
 	width: 100%;
 	padding: 0;
-
 }
 .profile_dtl dl dt {
 	text-align: left;
 	font-weight: bold;
 }
-
 .profile_dtl dl dt::after {
 	display: none;
 }
 .profile_dtl dl {
 	display: block;
 }
-
-
-
-
-
-}
+}/*ここまでmax-width:560px*/
