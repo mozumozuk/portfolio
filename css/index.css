@@ -3,7 +3,7 @@ body {
 	--h1-margin: 60px;/*見出し１とコンテンツの間*/
 	background-color: #F8F4D9;
 }
-body, p, h1, h2   ,ul    ,li   ,a,img,dl,dd{
+body,p,h1,h2,ul,li,a,img,dl,dd{
 	padding: 0;
 	margin: 0;
 	font-weight: normal;
@@ -30,24 +30,24 @@ header nav {
 	border-left: 5px solid #E64040;
 	margin-left: 80px;
 }
-/*表示するテキストが切り替わる*/
+/*ボタンホバーすると表示するテキストが切り替わる*/
 .btn{
 	position: relative; /*テキストの基点とするためrelativeを指定*/
-    width:210px;
+	width:210px;
 	padding: 20px;
-    text-align: center;
+	text-align: center;
 	display: inline-block;
-    text-decoration: none;
-    color: #E64040;
-    outline: none;
-    transition: all .1s; /*アニメーションの指定*/
+	text-decoration: none;
+	color: #E64040;
+ 	   outline: none;
+	transition: all .1s; /*アニメーションの指定*/
 }
 .btn span, .moreBtn span, footer a span{
 	position: absolute; /*絶対配置でテキストの位置を決める*/
 	left: 50%;
 	top:50%;
-    transform:translate(-50%,-50%);
-    transition: all .1s; /*アニメーションの指定*/
+	transform:translate(-50%,-50%);
+	transition: all .1s; /*アニメーションの指定*/
 	display: block; /*ブロック要素にしてテキスト折り返しなし*/ 
 	white-space: nowrap;
 }
@@ -346,6 +346,7 @@ input[name="tab_item"] {
 }
 .worksDtl_sec span {
 	font-weight: bold;
+	white-space: nowrap;
 }
 .worksDtl_sec p {
 	line-height: 30px;
