@@ -406,7 +406,7 @@ input[name="tab_item"] {
 .banner_flex,.banner-inner-flex{
 	display: flex;
 	gap: 20px;
-	justify-content: flex-start;
+	justify-content: center;
 }
 .banner_flex {
 	margin-top: var(--h1-margin);
@@ -518,7 +518,7 @@ header nav, .nav-toggle{
 	top: 32px;
 	transform: rotate(-315deg);
 }
-.btn {
+.subPage .btn {
 	color: #F8F4D9;
 	width: 100vw;
 	padding :40px 0;
