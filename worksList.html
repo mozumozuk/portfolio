@@ -9,11 +9,15 @@
 </style>
 <link href="css/index.css" rel="stylesheet" type="text/css">
 <link href="css/featherlight.min.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" type="image/png" href="img/android-touch-icon.png" sizes="192x192">
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-<script src="index.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
 <script type="text/javascript" src="js/featherlight.min.js"></script>
+<script src="js/index.js"></script>
 </head>
-<body class="subPage">
+<body class="subPage" id="subpage">
 <header>
   <a class="nav-toggle">
     <span></span>
@@ -79,7 +83,7 @@
               <p><a href="worksDtl-work6.html"><img src="img/img6.png" alt=""/></a></p>
               <p><a href="worksDtl-work6.html">ポートフォリオサイト（当サイト）</a></p>
             </div><!--.box-->
-          </div><!--.flex-box-->        
+          </div><!--.flex-box-->
         </div><!--.page_description-->
       </div><!--.tab_content_description-->
       <div class="tab_content" id="banner_content">
@@ -89,13 +93,13 @@
           </div>
           <div class="banner_flex">
           <div class="banner_box">
-            <a href="javascript:void(0)" data-featherlight="#bannr1"><img src="バナー/choco.png" alt=""/></a>
+            <a href="javascript:void(0)" data-featherlight="#bannr1"><img src="banner/choco.png" alt=""/></a>
             <p>#バナーお題 第1弾 冬限定一口チョコ</p>
           </div>
           <div class="featherlight-sample" id="bannr1">
             <!--以下、ポップアップ内-->
             <div class="banner-inner-flex">
-              <p class="inner-img"><img src="../バナー/choco.png" alt=""/></p>
+              <p class="inner-img"><img src="banner/choco.png" alt=""/></p>
               <div class="baner-text">
                 <p>バナー概要：冬限定一口チョコ。普段高いが今だけ割引価格で売っている</p>
                 <p>ターゲット：20〜40代の働く男女</p>
@@ -113,13 +117,13 @@
             <!--ポップアップ内容ここまで-->
           </div>
           <div class="banner_box">
-            <a href="javascript:void(0)" data-featherlight="#bannr2"><img src="バナー/summer sale.png" alt=""/></a>
+            <a href="javascript:void(0)" data-featherlight="#bannr2"><img src="banner/summer sale.png" alt=""/></a>
             <p>ECサイトのサマーセールの広告</p>
           </div>
           <div class="featherlight-sample" id="bannr2">
             <!--以下、ポップアップ内-->
             <div class="banner-inner-flex">
-              <p class="inner-img"><img src="バナー/summer sale.png" alt=""/></p>
+              <p class="inner-img"><img src="banner/summer sale.png" alt=""/></p>
               <div class="baner-text">
                 <p>バナー概要：ECサイトのサマーセールの宣伝</p>
                 <p>ターゲット：10～20代のファッションが好きな女性</p>
@@ -136,17 +140,17 @@
             <!--ポップアップ内容ここまで-->
           </div>
           <div class="banner_box">
-            <a href="javascript:void(0)" data-featherlight="#bannr3"><img src="バナー/penful1.png" alt=""/></a>
+            <a href="javascript:void(0)" data-featherlight="#bannr3"><img src="banner/penful1.png" alt=""/></a>
             <p>イラスト専門学校の体験申し込み</p>
           </div>
           <div class="featherlight-sample" id="bannr3">
             <!--以下、ポップアップ内-->
             <div class="banner-inner-flex">
-              <p class="inner-img"><img src="バナー/penful1.png" alt=""/></p>
+              <p class="inner-img"><img src="banner/penful1.png" alt=""/></p>
               <div class="baner-text">
                 <p>バナー概要：イラスト系専門学校の広告。体験申し込みの数を増やしたい。</p>
                 <p>ターゲット：10～20代のイラストレーターを目指している男女</p>
-                <p>イメージカラー：ピンク、水色</p>
+                <p>イメージカラー：ピンク、水色、紫</p>
                 <p>バナーサイズ：W300×H280px</p>
                 <p>---------------------------------</p>
                 <p>キャッチコピー：現役のプロが教える。だから身につく。</p>
@@ -155,80 +159,77 @@
               </div>
             </div>
             <p>イラスト系専門学校の無料体験申し込みの宣伝バナーを作成しました。</p>
-            <p>イラストは二次利用フリーの『星宝転生ジュエルセイバー』の素材を使用させていただきました。<br>
-            <a href="https://jewel-s.jp/" target="_blank">→星宝転生ジュエルセイバー</a></p>
+            <p>イラストは二次利用フリーの『星宝転生ジュエルセイバー』の素材から使用しています。<br>
+            <a href="https://jewel-s.jp/" target="_blank">→ジュエルセイバーFREE</a></p>
             <p>キャラクターと文字の色合いを寄せたり、キャラクターにドロップシャドウをつけたりすることでイラストと馴染むように気を付けました。</p>
             <p>また、学校名の「PENFUL」のロゴをあえてキャッチコピーと縦で揃えずに真ん中に少し寄せることで学校名に目が行きやすいようにしました。</p>
+            <p>文字やボタンをグラデーションにすることで、ターゲットが男女どちらにもイメージが偏らないようにしています。</p>
           </div><!--ポップアップ内容ここまで-->
           <div class="banner_box">
-            <a href="javascript:void(0)" data-featherlight="#bannr4"><img src="バナー/piza.png" alt=""/></a>
+            <a href="javascript:void(0)" data-featherlight="#bannr4"><img src="banner/piza.png" alt=""/></a>
             <p>ピザ屋さんの新商品の宣伝</p>
           </div>
           <div class="featherlight-sample" id="bannr4">
             <!--以下、ポップアップ内-->
             <div class="banner-inner-flex">
-              <p class="inner-img"><img src="バナー/piza.png" alt=""/></p>
+              <p class="inner-img"><img src="banner/piza.png" alt=""/></p>
               <div class="baner-text">
                 <p>バナー概要：ピザ屋さんの新商品の広告。注文数を増やしたい。</p>
                 <p>ターゲット：食べることが好きな男女</p>
                 <p>イメージカラー：赤、青</p>
                 <p>バナーサイズ：W300×H280px</p>
                 <p>---------------------------------</p>
-                <p>キャッチコピー：現役のプロが教える。だから身につく。</p>
-                <p>学校名：PENFUL</p>
-                <p>誘導：イラスト講座の無料体験申し込み</p>
+                <p>キャッチコピー：新定番！マルゲリータ</p>
+                <p>店名：NEWYORKピザ</p>
               </div>
             </div>
+            <p>ピザ屋さんの新商品のマルゲリータの広告を制作しました。</p>
+            <p>ピザの写真をPhotoShopで切り抜き、見切れるように大きく載せました。</p>
+            <p>マルゲリータの色の赤をメインカラーにし、バナーが目立つようにしています。</p>
           </div><!--ポップアップ内容ここまで-->
           <div class="banner_box">
-            <a href="javascript:void(0)" data-featherlight="#bannr5"><img src="バナー/sneakers7.png" alt=""/></a>
+            <a href="javascript:void(0)" data-featherlight="#bannr5"><img src="banner/sneakers.png" alt=""/></a>
             <p>スニーカーの新商品の宣伝</p>
           </div>
           <div class="featherlight-sample" id="bannr5">
             <!--以下、ポップアップ内-->
             <div class="banner-inner-flex">
-              <p class="inner-img"><img src="バナー/sneakers7.png" alt=""/></p>
+              <p class="inner-img"><img src="banner/sneakers.png" alt=""/></p>
               <div class="baner-text">
-                <p>バナー概要：イラスト系専門学校の広告。体験申し込みの数を増やしたい。</p>
-                <p>ターゲット：10～20代のイラストレーターを目指している男女</p>
-                <p>イメージカラー：ピンク、水色</p>
+                <p>バナー概要：架空の新商品のスニーカーの宣伝</p>
+                <p>ターゲット：スニーカーに興味のある20代の男性</p>
+                <p>イメージカラー：青・黄色・グレー</p>
                 <p>バナーサイズ：W300×H280px</p>
                 <p>---------------------------------</p>
-                <p>キャッチコピー：現役のプロが教える。だから身につく。</p>
-                <p>学校名：PENFUL</p>
-                <p>誘導：イラスト講座の無料体験申し込み</p>
+                <p>ブランド名：NICE</p>
+                <p>誘導：自社のECサイトの新商品ページ</p>
               </div>
             </div>
-            <p>イラスト系専門学校の無料体験申し込みの宣伝バナーを作成しました。</p>
-            <p>イラストは二次利用フリーの『星宝転生ジュエルセイバー』の素材を使用させていただきました。<br>
-            <a href="https://jewel-s.jp/" target="_blank">→星宝転生ジュエルセイバー</a></p>
-            <p>キャラクターと文字の色合いを寄せたり、キャラクターにドロップシャドウをつけたりすることでイラストと馴染むように気を付けました。</p>
-            <p>また、学校名の「PENFUL」のロゴをあえてキャッチコピーと縦で揃えずに真ん中に少し寄せることで学校名に目が行きやすいようにしました。</p>
+            <p>スニーカーの新商品の宣伝バナーを作成しました。</p>
+            <p>写真は、スニーカーのみ切り抜き、バックに大きく文字を配置することで目につきやすくしています。</p>
+            <p>文字の色はスニーカーの黄色と、その反対色の青色を使用することで引き立たせています。</p>
           </div><!--ポップアップ内容ここまで-->
           <div class="banner_box">
-            <a href="javascript:void(0)" data-featherlight="#bannr5"><img src="バナー/bridal.png" alt=""/></a>
-            <p>ピザ屋さんの新商品の宣伝</p>
+            <a href="javascript:void(0)" data-featherlight="#bannr6"><img src="banner/bridal.png" alt=""/></a>
+            <p>ブライダルの広告</p>
           </div>
-          <div class="featherlight-sample" id="bannr5">
+          <div class="featherlight-sample" id="bannr6">
             <!--以下、ポップアップ内-->
             <div class="banner-inner-flex">
-              <p class="inner-img"><img src="バナー/bridal.png" alt=""/></p>
+              <p class="inner-img"><img src="banner/bridal.png" alt=""/></p>
               <div class="baner-text">
-                <p>バナー概要：イラスト系専門学校の広告。体験申し込みの数を増やしたい。</p>
-                <p>ターゲット：10～20代のイラストレーターを目指している男女</p>
-                <p>イメージカラー：ピンク、水色</p>
+                <p>バナー概要：身内だけでできる小さな結婚式の広告。申込数を増やしたい。</p>
+                <p>ターゲット：結婚を考えている20代～30代前半の女性</p>
+                <p>イメージカラー：ピンク、グレー</p>
                 <p>バナーサイズ：W300×H280px</p>
                 <p>---------------------------------</p>
-                <p>キャッチコピー：現役のプロが教える。だから身につく。</p>
-                <p>学校名：PENFUL</p>
-                <p>誘導：イラスト講座の無料体験申し込み</p>
+                <p>キャッチコピー：二人だけの小さな結婚式</p>
+                <p>誘導：1DAYPLANの申し込み数の増加</p>
               </div>
             </div>
-            <p>イラスト系専門学校の無料体験申し込みの宣伝バナーを作成しました。</p>
-            <p>イラストは二次利用フリーの『星宝転生ジュエルセイバー』の素材を使用させていただきました。<br>
-            <a href="https://jewel-s.jp/" target="_blank">→星宝転生ジュエルセイバー</a></p>
-            <p>キャラクターと文字の色合いを寄せたり、キャラクターにドロップシャドウをつけたりすることでイラストと馴染むように気を付けました。</p>
-            <p>また、学校名の「PENFUL」のロゴをあえてキャッチコピーと縦で揃えずに真ん中に少し寄せることで学校名に目が行きやすいようにしました。</p>
+            <p>ブライダルの広告を作成しました。</p>
+            <p>二色のピンクを使用して文字を目立たせる工夫をしています。</p>
+            <p>また、「限定」の文字を丸で囲んで、強調したり、写真の彩度を少し抑えて文字に目が行くようにしました。</p>
           </div><!--ポップアップ内容ここまで-->
         </div>
       </div>
@@ -240,56 +241,52 @@
         </div>
         <div class="banner_flex">
           <div class="banner_box">
-            <a href="javascript:void(0)" data-featherlight="#logo1"><img src="logo/logo.png" alt=""/></a>
+            <a href="javascript:void(0)" data-featherlight="#logo1"><img src="logo/logo1.png" alt=""/></a>
             <p>架空のIT企業「SKY VISION」のロゴ</p>
           </div>
           <div class="featherlight-sample" id="logo1">
             <!--以下、ポップアップ内-->
             <div class="banner-inner-flex">
-              <p class="inner-img"><img src="logo/logo.png" alt=""/></p>
+              <p class="inner-img"><img src="logo/logo1.png" alt=""/></p>
               <div class="baner-text">
                 <p>IT企業「SKY VISION」のロゴ</p>
-                <p>イメージカラー：白、水色</p>
-                <p>---------------------------------</p>
-                <p>割引価格：10～20％割引</p>
+                <p>イメージカラー：白、水色、青</p>
               </div>
             </div>
-            <p>webデザイナーのこばやすさん主催の「#バナーお題 一口チョコ」の企画に参加し、バナーを作成しました。<br>
-            <a href="https://note.com/kobayas/n/n7454d1ec9b95?magazine_key=m3e73ae9c2748" target="_blank">→企画詳細</a></p>
-            <p>普段は高いチョコとのことなので、カジュアルになりすぎないようフォントなどにこだわりました。</p>
+            <p>IT企業の「SKY VISION」のロゴを作成しました。</p>
+            <p>こちらはデザインカンプも作成しています。<a href="worksDtl-work4.html" target="_blank">→デザインカンプはこちら</a></p>
+            <p>ロゴのシンボルマークは頭文字のSをイメージし、空のグラデーションのようなカラーにしました。</p>
+            <p>使用しているフォントは「Verdana」というサンセリフ書体で、可読性の高いフォントにしました。</p>
           </div><!--ポップアップ内容ここまで-->
           <div class="banner_box">
-          <a href="javascript:void(0)" data-featherlight="#logo2"><img src="logo/logo2-1.png" alt=""/></a>
+          <a href="javascript:void(0)" data-featherlight="#logo2"><img src="logo/logo2.jpg" alt=""/></a>
           <p>木製家具の店「天然木のおやまだ工房」のロゴ</p>
         </div>
         <div class="featherlight-sample" id="logo2">
           <!--以下、ポップアップ内-->
           <div class="banner-inner-flex">
-            <p class="inner-img"><img src="logo/logo2-1.png" alt=""/></p>
+            <p class="inner-img"><img src="logo/logo2.jpg" alt=""/></p>
             <div class="baner-text">
-              <p>バナー概要：ECサイトのサマーセールの宣伝</p>
-              <p>ターゲット：10～20代のファッションが好きな女性</p>
-              <p>イメージカラー：うす紫、ピンク</p>
-              <p>バナーサイズ：W300×H280px</p>
-              <p>---------------------------------</p>
-              <p>キャッチコピー：SUPER SUMMER SALE</p>
-              <p>割引価格：最大50％割引</p>
+              <p>木工職人　天然木のおやまだ工房のロゴ</p>
+              <p>イメージカラー：緑、茶色、白</p>
             </div>
           </div>
-          <p>シティーポップのようなおしゃれな雰囲気をイメージして作成しました。<br>
-          <a href="https://desaken.com/archives/3771" target="_blank">→デザイン参考</a></p>
-          <p>割引価格が「最大50％割引」とかなり大きい数字なので、ここを目立たせるよう工夫しました。</p>
+          <p>職業訓練校での課題で、木工職人でテーブルや椅子を作っているおやまだ工房のロゴを作成しました。</p>
+          <p>「木」の文字をイラストにし、ロゴのシンボルマークは木目とテーブルを表しています。</p>
+          <p>使用しているフォントは、「Zen Kaku Gothic New Light」というゴシック体のフォントを使用し、素朴で親しみやすいロゴになるようにしました。</p>
+          <p>また、縦組バージョンや白黒のローマ字バージョンなど複数のパターンで作成しました。</p>
+          <p><img src="logo/logo2-2.png" alt=""/></p>
         </div><!--ポップアップ内容ここまで-->
         <div class="banner_box">
-          <a href="javascript:void(0)" data-featherlight="#logo3"><img src="logo/レイヤー 2.png" alt=""/></a>
-          <p>イラスト専門学校の体験申し込み</p>
+          <a href="javascript:void(0)" data-featherlight="#logo3"><img src="logo/logo3.png" alt=""/></a>
+          <p>ネオン風のナポリタンイラスト</p>
         </div>
         <div class="featherlight-sample" id="logo3">
           <!--以下、ポップアップ内-->
           <div class="banner-inner-flex">
-            <p class="inner-img"><img src="logo/レイヤー 2.png" alt=""/></p>
+            <p class="inner-img"><img src="logo/logo3.png" alt=""/></p>
             <div class="baner-text">
-              <p>バナー概要：イラスト系専門学校の広告。体験申し込みの数を増やしたい。</p>
+              <p></p>
               <p>ターゲット：10～20代のイラストレーターを目指している男女</p>
               <p>イメージカラー：ピンク、水色</p>
               <p>バナーサイズ：W300×H280px</p>
@@ -334,11 +331,11 @@
     </div>
   </div>
 </div>
-<p class="border"><a class="moreBtn" href="index.html#works_sec"><span>BACK</span><span>トップへ戻る</span></a></p>
+<p class="border"><a class="moreBtn" onclick="history.back(-1);return false;"><span>BACK</span><span>トップへ戻る</span></a></p>
 </div><!--.worksList_sec 制作物一覧ここまで-->
 </div><!--.inner-->
-<div id="pagetop"><a href="#top"></a></div>
-<footer><p class="footer_link"><a href="index.html"><span>TOP</span><span>トップ</span></a>&nbsp;<a href="worksList.html"><span>WORKS</span><span>制作物</span></a>&nbsp;<a href="profile.html"><span>PROFILE</span><span>私について</span></a>&nbsp;<a href="index.html#skills_sec"><span>SKILLS</span><span>スキル</span></a>&nbsp;<a href="index.html#contact_sec"><span>CONTACT</span><span>お問い合わせ</span></a></p>
+<div id="pagetop"><a href="#subpage"></a></div>
+<footer><p class="footer_link"><a href="index.html"><span>TOP</span><span>トップ</span></a><a href="worksList.html"><span>WORKS</span><span>制作物</span></a><a href="profile.html"><span>PROFILE</span><span>私について</span></a><a href="index.html#skills_sec"><span>SKILLS</span><span>スキル</span></a><a href="index.html#contact_sec"><span>CONTACT</span><span>お問い合わせ</span></a></p>
 <p class="copyright">©KAWANO MIYU PORTFOLIO</p></footer>
 </body>
 </html>
