@@ -461,6 +461,11 @@ input[name="tab_item"] {
 	margin: 0 auto;
 	width: calc(100% - 40px);
 }
+.btn {
+	color: #F8F4D9;
+	width: 100vw;
+	padding :40px 0;
+}
 header {
 	background-size: contain;
 	margin: 0 auto;
