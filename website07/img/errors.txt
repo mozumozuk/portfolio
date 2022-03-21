@@ -1,0 +1,14 @@
+[2022-1-19 09:58:28] layer "A.IQよりEQを大切にしている会社です。 ": Expected end of input but "\u3088" found.
+[2022-1-19 09:58:28] layer "A.SES（お客様先常駐）と社内SEの割合は半々です。": Expected end of input but "\uFF08" found.
+[2022-1-19 09:58:28] layer "Q.IT業界が未経験で不安です・・？": Expected end of input but "\u696D" found.
+[2022-1-19 09:58:28] layer "topimg.png": Duplicate path: topimg.png
+[2022-1-19 09:58:28] layer "mian_img1.png": Duplicate path: mian_img1.png
+[2022-1-19 09:58:28] layer "main_img2.png": Duplicate path: main_img2.png
+[2022-1-19 09:58:28] layer "main_img3.png": Duplicate path: main_img3.png
+[2022-1-19 09:58:28] layer "MESSAGE.png": Duplicate path: MESSAGE.png
+[2022-1-19 09:58:28] layer "interviw_back.png": Duplicate path: interviw_back.png
+[2022-1-19 09:58:28] layer "toplog.png": Duplicate path: toplog.png
+[2022-1-19 09:58:28] layer "toplog.png のコピー": Expected end of input but "\u306E" found.
+[2022-1-19 09:58:28] layer "Q.IT業界が未経験で不安です・・？": Expected end of input but "\u696D" found.
+[2022-1-19 09:58:28] layer "A.IQよりEQを大切にしている会社です。  　勉強で100点が取れるひと、大学で評価される  　論文を発表すること、人生にお": Expected end of input but "\u3088" found.
+[2022-1-19 09:58:28] layer "A.SES（お客様先常駐）と社内SEの割合は半々  　です。  　　リモートも増えてきています。担当企業が役  　所や自治体も": Expected end of input but "\uFF08" found.
