@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Input ID and Password."
-AuthUserFile portfolio/.htpasswd
+AuthUserFile /.htpasswd
 require valid-user
