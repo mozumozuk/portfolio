@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Input ID and Password."
-AuthUserFile mozumozuk.github.io/portfolio/.htpasswd
+AuthUserFile https://mozumozuk.github.io/portfolio/.htpasswd
 require valid-user
