@@ -387,6 +387,8 @@ input[name="tab_item"] {
 .link_url a {
 	color: hsla(52,66%,91%,1.00);
 	display: block;
+	padding: 20px;
+	font-size: 30px;
 }
 .scs_img {
 	display: flex;
